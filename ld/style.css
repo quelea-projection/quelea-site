@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v6/erE3KsIWUumgD1j_Ca-V-xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v6/LeFlHvsZjXu2c3ZRgBq9nFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+:root {
+  --bg-color: aliceblue;
+  
+  --selected-infocus: lightblue;
+  --selected-nofocus: #DDDDDD;
+  
+  --canvascontainer-background: #DDDDDD;
+  
+  --selectablecontainer-background: white;
+  --selectablecontainer-border: 1px solid #CCCCCC;
+  
+  --odd-list-background: #FAFAFA;
+  --even-list-background: #F2F2F2;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	background: var(--bg-color);
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	display: flex;
+	min-height: 0;
+}
+
+.usermenu {
+	display: none;
+	position: absolute;
+	right: 0;
+	z-index: 100;
+	color: white;
+	background-color: black;
+}
+
+.menuusername {
+	cursor: pointer;
+}
+
+.menuusername .usermenu div:hover {
+	background-color: gray;
+}
+
+.menuusername:hover .usermenu {
+	display: block;
+}
+
+.dropdownarrow {
+	margin-left: 3px;
+	color: #CCCCCC;
+}
+
+.topmenu {
+	float: top;
+	width: 100%;
+	color: white;
+	font-size: 0.9em;
+	background: linear-gradient(#999999, #222222);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-shrink: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.topmenu div {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.leftcontainer {
+	display: flex;
+	flex-basis: 10vh;
+	flex-grow: 1;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.centercontainer {
+	display: flex;
+	flex-grow: 2;
+	justify-content: space-between;
+	flex-basis: 0;
+	flex-direction: column;
+}
+
+.rightcontainer {	
+	display: flex;
+	flex-grow: 2;
+	justify-content: space-between;
+	flex-basis: 0;
+	flex-direction: column;
+}
+
+.schedulecontainer {
+	flex-grow: 10;
+}
+
+.dbcontainer {
+	flex-grow: 1;
+}
+
+.dbcontainer .items {
+	min-height: 0;
+	max-height: 250px;
+}
+
+.displaycanvascontainer {
+	margin: 6px;
+	background: var(--canvascontainer-background);
+    text-align:center;
+	min-width: 0;
+}
+
+.selectablecontainer {
+	display:flex;
+	flex-direction: column;
+	min-height: 0;
+	border: var(--selectablecontainer-border);
+	cursor: default;
+	margin: 3px;
+	background: var(--selectablecontainer-background);
+	opacity: 0.95;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.centercontainer .selectablecontainer, .rightcontainer .selectablecontainer {
+	flex-grow: 1;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 3px;
+	padding: 10px;
+}
+
+.header .title {
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: #575757;
+	font-weight: bold;
+}
+
+.golivebutton {
+	font-weight: bold;
+}
+
+.items {
+	padding-left: 5px;
+	overflow-y: auto;
+	min-height: 0;
+}
+
+.schedulecontainer .item {
+	padding: 5px;
+}
+
+.item {
+	overflow: hidden;
+	font-size: 12px;
+	color: #444444;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.line {
+	padding: 2px;
+}
+
+.item:nth-of-type(odd):not([data-selected="true"]) {
+    background: var(--odd-list-background);
+}
+
+.item:nth-of-type(even):not([data-selected="true"]) {
+    background: var(--even-list-background);
+}
+
+.item[data-selected="true"]:focus {
+	background: var(--selected-infocus);
+}
+
+.item[data-selected="true"]:not(focus) {
+	background: var(--selected-nofocus);
+}

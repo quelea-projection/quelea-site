@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/berry120
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://quelea.org
+  * I am berry120 (https://keybase.io/berry120) on keybase.
+  * I have a public key with fingerprint 91D8 255A 138B BAA9 6A6F  8971 4FBE 84D6 B27E A95E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01013629ffe8758fb5c2d64a8003d9ab2c42524631580333115343fb2bb9047022a20a",
+            "fingerprint": "91d8255a138bbaa96a6f89714fbe84d6b27ea95e",
+            "host": "keybase.io",
+            "key_id": "4fbe84d6b27ea95e",
+            "kid": "01013629ffe8758fb5c2d64a8003d9ab2c42524631580333115343fb2bb9047022a20a",
+            "uid": "943b801c36362c15c49e4fe9720a6c19",
+            "username": "berry120"
+        },
+        "service": {
+            "hostname": "quelea.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1475682216,
+    "expire_in": 157680000,
+    "prev": "53d63bebaaae205349d93bfc6fd95d6509c8192b8d59c3b2696cc3c2310ce883",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJvaE5RHMfvM6ZtIiwkzFyZxRP3nHPvec55woTEypopMtPjnnvPfXbb
+s+c+u899xrM/FMsSKyl/XpBa/iWbmpEo2RJCecP2QqYhfyIbIysT565556VXp/Pr
+8/2e7/fXuTtpnJQTqK+2LxU+WD4YeNR1LCVt/T7vYr3MHDMth+vlKj568JjJk16k
+yjblsKwABSAMqWVxEtKIxTQDmljViaIgk+oMGirUoIoR0IiCEAJAQyqyGGSMKmpI
+gVCHii4HZcuOR7mbcO24J2wpMAnUNB0gwpiuU6xji9AQUC3GiWpiBkNcpxoXwkon
+6StEOKYn+VLbETNxiYzG+wf/n3OnRu2oihhRgIGwMDWAZqiUqxanIQFhA1AfTHI3
+rldzQTPuumkAFbkxKItprW1wf7F+kzGiJsVjXF/quFGhTLiO5xhOTMwrPS+RDPs6
+L53wwV2cRcYsIsyOm2KLQlHL3aTtxOUwEKTh2b4nUEMaJhACHJT57oTt8ojtE1oI
+i9KK4r/Da4WlhkyMGBdr1zlURG1qUsQsA1sm1UysKdQggEJGTI0aiEFMsWEgAyKg
+GJwQJPulauKOHFZFTD0qLJN2NK57KZfLjd13KsZLgRxpQmaG/7uknOwpf/9caGqW
+1HmeFOR/OjBpRqO0rjnYG265dvbtIzX39bbFD1ade9jzgxQdXvfWG7iwsOzN06as
+0h3f7hc36OHy+icfe8yCkbWbrx737l/fuWhy6cxAKt3WkVuXeaOr+yRusNbcKila
+/fpDXTNtp1vv/cw4/nLx/I21duvLz87HaNXQCD6UbsrmK0+nY2V9LzbsXX5seM72
+4c6bRzrS8Sdf97Wqv3juGQZzguUlyf6J7Ueb9p94vmIC+TCE5/cHskqLhy+fOTiu
+p+Bdq3T1d9vt6b0L9qydO62pRzolF285XDFQ0Pts1s3Kmi9X8jY9h9mxV5f6Pi2p
+uf1i9vvB/LzHxesrCp2W0pZlMzPP/wHXPzom
+=93QQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/berry120
+
+==================================================================
